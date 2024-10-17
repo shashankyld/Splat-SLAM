@@ -90,6 +90,10 @@ python -c "import torch; print(torch.cuda.is_available())"
 ```bash
 if (p_view.z <= 0.001f)// || ((p_proj.x < -1.3 || p_proj.x > 1.3 || p_proj.y < -1.3 || p_proj.y > 1.3)))
 ```
+or run the following patch script
+```
+./patch_gaussian_threshold_for_rasterization.sh
+```
 5. Install the remaining dependencies.
 ```bash
 python -m pip install -e thirdparty/lietorch/
